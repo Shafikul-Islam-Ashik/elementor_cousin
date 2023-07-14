@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap 5.3 css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="./assets/font-awesome/css/font-awesome.min.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid p-3">
+      <div class="row justify-content-between">
+        <!-- left side starts -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <div class="card-header py-4">Section Dynamic</div>
+            <div class="card-body">
+              <div class="accordion">
+                <!-- heading starts -->
+                <div class="accordion-item">
+                  <h2
+                    class="accordion-button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#item1"
+                  >
+                    Heading style
+                  </h2>
+                  <div class="accordion-collapse collapse show" id="item1">
+                    <div class="accordion-body heading-section">
+                      <!-- heading input -->
+                      <div class="form-group mt-0">
+                        <label for="title" class="mb-1">Heading</label>
+                        <input
+                          type="text"
+                          id="title"
+                          class="form-control heading"
+                        />
+                      </div>
+
+                      <!-- text align -->
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Text Align</label>
+                        <br />
+                        <label>
+                          <input
+                            type="radio"
+                            name="title-align"
+                            class="align"
+                            value="left"
+                          />
+                          Left
+                        </label>
+                        <label class="mx-3">
+                          <input
+                            type="radio"
+                            name="title-align"
+                            class="align"
+                            value="center"
+                          />
+                          Center
+                        </label>
+                        <label>
+                          <input
+                            type="radio"
+                            name="title-align"
+                            class="align"
+                            value="right"
+                          />
+                          Right
+                        </label>
+                      </div>
+
+                      <!-- text Transform -->
+
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Text Transform</label>
+                        <br />
+                        <label>
+                          <input
+                            type="radio"
+                            name="title-transform"
+                            class="text-transform"
+                            value="lowercase"
+                          />
+                          Lowercase
+                        </label>
+                        <label class="mx-3">
+                          <input
+                            type="radio"
+                            name="title-transform"
+                            class="text-transform"
+                            value="uppercase"
+                          />
+                          Uppercase
+                        </label>
+                        <label>
+                          <input
+                            type="radio"
+                            name="title-transform"
+                            class="text-transform"
+                            value="capitalize"
+                          />
+                          Capitalize
+                        </label>
+                      </div>
+
+                      <!-- Font Weight -->
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Font Weight</label>
+                        <br />
+                        <label>
+                          <input
+                            type="radio"
+                            name="title-fw"
+                            class="font-weight"
+                            value="lighter"
+                          />
+                          Lighter
+                        </label>
+                        <label class="mx-3">
+                          <input
+                            type="radio"
+                            name="title-fw"
+                            class="font-weight"
+                            value="normal"
+                          />
+                          Normal
+                        </label>
+                        <label class="mx-3">
+                          <input
+                            type="radio"
+                            name="title-fw"
+                            class="font-weight"
+                            value="bold"
+                          />
+                          Bold
+                        </label>
+                      </div>
+
+                      <!-- Font Size -->
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Font Size</label>
+                        <br />
+                        <div class="row align-items-center">
+                          <div class="col-md-8">
+                            <input
+                              type="range"
+                              name=""
+                              id=""
+                              class="w-100 font-size"
+                              max="100"
+                              min="14"
+                              step="1px"
+                              value="22"
+                            />
+                          </div>
+                          <div class="col-md-4">
+                            <input
+                              type="text"
+                              class="form-control text-center font-size-display"
+                              value="22 px"
+                              disabled
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- margin -->
+                      <div class="form-group margin mt-3">
+                        <label class="mb-1">Margin:&nbsp;(px)</label>
+                        <div
+                          class="input-wrapper d-flex justify-content-between"
+                        >
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Top"
+                          />
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Bottom"
+                          />
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Left"
+                          />
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Right"
+                          />
+                        </div>
+                      </div>
+
+                      <!-- padding -->
+                      <div class="form-group padding mt-3">
+                        <label class="mb-1">Padding:&nbsp;(px)</label>
+                        <div
+                          class="input-wrapper d-flex justify-content-between"
+                        >
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Top"
+                          />
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Bottom"
+                          />
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Left"
+                          />
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Right"
+                          />
+                        </div>
+                      </div>
+
+                      <!-- Color -->
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Color</label>
+                        <br />
+                        <input type="color" class="color form-control" />
+                      </div>
+
+                      <!-- Background Color -->
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Background Color</label>
+                        <br />
+                        <input
+                          type="color"
+                          class="background-color form-control"
+                        />
+                      </div>
+
+                      <!-- Font Family -->
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Font Family</label>
+                        <select name="" class="form-control font-family" id="">
+                          <option value="" hidden>Select</option>
+                          <option value="poppins">Poppins</option>
+                          <option value="roboto">Roboto</option>
+                          <option value="sacramento">Sacramento</option>
+                          <option value="impact">Impact</option>
+                          <option value="lobster">Lobster</option>
+                          <option value="pacifico">Pacifico</option>
+                          <option value="imperial script">
+                            Imperial script
+                          </option>
+                          <option value="sans-serif">Sans-serif</option>
+                          <option value="monospace">Monospace</option>
+                        </select>
+                      </div>
+                      <!-- ! Font Family -->
+                    </div>
+                  </div>
+                </div>
+                <!-- heading ends -->
+
+                <!-- description starts -->
+                <div class="accordion-item">
+                  <h2
+                    class="accordion-button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#item2"
+                  >
+                    Description Style
+                  </h2>
+                  <div class="accordion-collapse collapse" id="item2">
+                    <div class="accordion-body desc-section">
+                      <!-- input-->
+                      <div class="form-group mt-0">
+                        <label for="heading" class="mb-1">Description</label>
+                        <textarea
+                          name=""
+                          id=""
+                          rows="5"
+                          cols="30"
+                          class="form-control"
+                        ></textarea>
+                      </div>
+
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Text Align</label>
+                        <br />
+                        <label>
+                          <input
+                            type="radio"
+                            name="des-align"
+                            class="align"
+                            value="left"
+                          />
+                          Left
+                        </label>
+                        <label class="mx-3">
+                          <input
+                            type="radio"
+                            name="des-align"
+                            class="align"
+                            value="center"
+                          />
+                          Center
+                        </label>
+                        <label>
+                          <input
+                            type="radio"
+                            name="des-align"
+                            class="align"
+                            value="right"
+                          />
+                          Right
+                        </label>
+                        <label class="mx-3">
+                          <input
+                            type="radio"
+                            name="des-align"
+                            class="align"
+                            value="justify"
+                          />
+                          Justify
+                        </label>
+                      </div>
+
+                      <!-- text Transform -->
+
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Text Transform</label>
+                        <br />
+                        <label>
+                          <input
+                            type="radio"
+                            name="des-transform"
+                            class="text-transform"
+                            value="lowercase"
+                          />
+                          Lowercase
+                        </label>
+                        <label class="mx-3">
+                          <input
+                            type="radio"
+                            name="des-transform"
+                            class="text-transform"
+                            value="uppercase"
+                          />
+                          Uppercase
+                        </label>
+                        <label>
+                          <input
+                            type="radio"
+                            name="des-transform"
+                            class="text-transform"
+                            value="capitalize"
+                          />
+                          Capitalize
+                        </label>
+                      </div>
+
+                      <!-- Font Weight -->
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Font Weight</label>
+                        <br />
+                        <label>
+                          <input
+                            type="radio"
+                            name="des-fw"
+                            class="font-weight"
+                            value="lighter"
+                          />
+                          Lighter
+                        </label>
+                        <label>
+                          <input
+                            type="radio"
+                            name="des-fw"
+                            class="font-weight"
+                            value="normal"
+                          />
+                          Normal
+                        </label>
+                        <label class="mx-3">
+                          <input
+                            type="radio"
+                            name="des-fw"
+                            class="font-weight"
+                            value="bold"
+                          />
+                          Bold
+                        </label>
+                      </div>
+
+                      <!-- Font Size -->
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Font Size</label>
+                        <br />
+                        <div class="row align-items-center">
+                          <div class="col-md-8">
+                            <input
+                              type="range"
+                              name=""
+                              id=""
+                              class="w-100 font-size"
+                              max="100"
+                              min="10"
+                              step="1px"
+                              value="16"
+                            />
+                          </div>
+                          <div class="col-md-4">
+                            <input
+                              type="text"
+                              class="form-control text-center font-size-display"
+                              value="16 px"
+                              disabled
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Line height -->
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Line Height</label>
+                        <br />
+                        <div class="row align-items-center">
+                          <div class="col-md-8">
+                            <input
+                              type="range"
+                              name=""
+                              id=""
+                              class="w-100 line-height"
+                              max="100"
+                              min="10"
+                              step="1px"
+                              value="24"
+                            />
+                          </div>
+                          <div class="col-md-4">
+                            <input
+                              type="text"
+                              class="form-control text-center line-height-display"
+                              value="24 px"
+                              disabled
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- margin -->
+                      <div class="form-group margin mt-3">
+                        <label class="mb-1">Margin:&nbsp;(px)</label>
+                        <div
+                          class="input-wrapper d-flex justify-content-between"
+                        >
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Top"
+                          />
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Bottom"
+                          />
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Left"
+                          />
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Right"
+                          />
+                        </div>
+                      </div>
+
+                      <!-- padding -->
+                      <div class="form-group padding mt-3">
+                        <label class="mb-1">Padding:&nbsp;(px)</label>
+                        <div
+                          class="input-wrapper d-flex justify-content-between"
+                        >
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Top"
+                          />
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Bottom"
+                          />
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Left"
+                          />
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Right"
+                          />
+                        </div>
+                      </div>
+
+                      <!-- Color -->
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Color</label>
+                        <br />
+                        <input type="color" class="color form-control" />
+                      </div>
+
+                      <!-- Background Color -->
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Background Color</label>
+                        <br />
+                        <input
+                          type="color"
+                          class="background-color form-control"
+                        />
+                      </div>
+
+                      <!-- Font Family -->
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Font Family</label>
+                        <select name="" class="form-control font-family" id="">
+                          <option value="" hidden>Select</option>
+                          <option value="poppins">Poppins</option>
+                          <option value="roboto">Roboto</option>
+                          <option value="sacramento">Sacramento</option>
+                          <option value="impact">Impact</option>
+                          <option value="lobster">Lobster</option>
+                          <option value="pacifico">Pacifico</option>
+                          <option value="imperial script">
+                            Imperial script
+                          </option>
+                          <option value="sans-serif">Sans-serif</option>
+                          <option value="monospace">Monospace</option>
+                        </select>
+                      </div>
+                      <!-- ! Font Family -->
+                    </div>
+                  </div>
+                </div>
+                <!-- description ends -->
+
+                <!-- button starts -->
+                <div class="accordion-item">
+                  <h2
+                    class="accordion-button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#item3"
+                  >
+                    Button Style
+                  </h2>
+                  <div class="accordion-collapse collapse" id="item3">
+                    <div class="accordion-body button-section">
+                      <!-- button input -->
+                      <div class="form-group mt-0">
+                        <label for="title" class="mb-1">Button Text</label>
+                        <input
+                          type="text"
+                          id="title"
+                          class="form-control button-input"
+                        />
+                      </div>
+
+                      <!-- text align -->
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Text Align</label>
+                        <br />
+                        <label>
+                          <input
+                            type="radio"
+                            name="button-align"
+                            class="align"
+                            value="left"
+                          />
+                          Left
+                        </label>
+                        <label class="mx-3">
+                          <input
+                            type="radio"
+                            name="button-align"
+                            class="align"
+                            value="center"
+                          />
+                          Center
+                        </label>
+                        <label>
+                          <input
+                            type="radio"
+                            name="button-align"
+                            class="align"
+                            value="right"
+                          />
+                          Right
+                        </label>
+                      </div>
+
+                      <!-- text Transform -->
+
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Text Transform</label>
+                        <br />
+                        <label>
+                          <input
+                            type="radio"
+                            name="button-transform"
+                            class="button-transform"
+                            value="lowercase"
+                          />
+                          Lowercase
+                        </label>
+                        <label class="mx-3">
+                          <input
+                            type="radio"
+                            name="button-transform"
+                            class="button-transform"
+                            value="uppercase"
+                          />
+                          Uppercase
+                        </label>
+                        <label>
+                          <input
+                            type="radio"
+                            name="button-transform"
+                            class="button-transform"
+                            value="capitalize"
+                          />
+                          Capitalize
+                        </label>
+                      </div>
+
+                      <!-- Font Weight -->
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Font Weight</label>
+                        <br />
+                        <label>
+                          <input
+                            type="radio"
+                            name="button-fw"
+                            class="font-weight"
+                            value="lighter"
+                          />
+                          Lighter
+                        </label>
+                        <label class="mx-3">
+                          <input
+                            type="radio"
+                            name="button-fw"
+                            class="font-weight"
+                            value="normal"
+                          />
+                          Normal
+                        </label>
+                        <label class="mx-3">
+                          <input
+                            type="radio"
+                            name="button-fw"
+                            class="font-weight"
+                            value="bold"
+                          />
+                          Bold
+                        </label>
+                      </div>
+
+                      <!-- Button position-->
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Position</label>
+                        <br />
+                        <label>
+                          <input
+                            type="radio"
+                            name="button-position"
+                            class="button-position"
+                            value="flex-start"
+                          />
+                          Left
+                        </label>
+                        <label class="mx-3">
+                          <input
+                            type="radio"
+                            name="button-position"
+                            class="button-position"
+                            value="center"
+                          />
+                          Center
+                        </label>
+                        <label class="mx-3">
+                          <input
+                            type="radio"
+                            name="button-position"
+                            class="button-position"
+                            value="flex-end"
+                          />
+                          Right
+                        </label>
+                      </div>
+
+                      <!-- Font Size -->
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Font Size</label>
+                        <br />
+                        <div class="row align-items-center">
+                          <div class="col-md-8">
+                            <input
+                              type="range"
+                              name=""
+                              id=""
+                              class="w-100 font-size"
+                              max="100"
+                              min="14"
+                              step="1px"
+                              value="22"
+                            />
+                          </div>
+                          <div class="col-md-4">
+                            <input
+                              type="text"
+                              class="form-control text-center font-size-display"
+                              value="22 px"
+                              disabled
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- margin -->
+                      <div class="form-group margin mt-3">
+                        <label class="mb-1">Margin:&nbsp;(px)</label>
+                        <div
+                          class="input-wrapper d-flex justify-content-between"
+                        >
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Top"
+                          />
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Bottom"
+                          />
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Left"
+                          />
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Right"
+                          />
+                        </div>
+                      </div>
+
+                      <!-- padding -->
+                      <div class="form-group padding mt-3">
+                        <label class="mb-1">Padding:&nbsp;(px)</label>
+                        <div
+                          class="input-wrapper d-flex justify-content-between"
+                        >
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Top"
+                          />
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Bottom"
+                          />
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Left"
+                          />
+                          <input
+                            class="form-control w-25"
+                            type="number"
+                            placeholder="Right"
+                          />
+                        </div>
+                      </div>
+
+                      <!-- Color -->
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Color</label>
+                        <br />
+                        <input type="color" class="color form-control" />
+                      </div>
+
+                      <!-- Background Color -->
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Background Color</label>
+                        <br />
+                        <input
+                          type="color"
+                          class="background-color form-control"
+                        />
+                      </div>
+
+                      <!-- Font Family -->
+                      <div class="form-group mt-3">
+                        <label class="mb-1">Font Family</label>
+                        <select name="" class="form-control font-family" id="">
+                          <option value="" hidden>Select</option>
+                          <option value="poppins">Poppins</option>
+                          <option value="roboto">Roboto</option>
+                          <option value="sacramento">Sacramento</option>
+                          <option value="impact">Impact</option>
+                          <option value="lobster">Lobster</option>
+                          <option value="pacifico">Pacifico</option>
+                          <option value="imperial script">
+                            Imperial script
+                          </option>
+                          <option value="sans-serif">Sans-serif</option>
+                          <option value="monospace">Monospace</option>
+                        </select>
+                      </div>
+                      <!-- ! Font Family -->
+                    </div>
+                  </div>
+                </div>
+                <!-- button ends -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- left side ends -->
+
+        <!-- right side starts -->
+        <div class="col-md-8 output">
+          <div class="heading-wrapper">
+            <h2>Title</h2>
+          </div>
+          <div class="description-wrapper">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
+              placeat possimus atque, adipisci quia tempora incidunt, eaque quod
+              doloremque, consequatur voluptatem! Numquam voluptatibus eius quis
+              cum rem rerum earum quia!
+            </p>
+          </div>
+          <div class="button-wrapper d-flex">
+            <button class="btn btn-outline-secondary">Button</button>
+          </div>
+        </div>
+        <!-- right side ends -->
+      </div>
+    </div>
+
+    <!-- bootstrap js -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="./src/data.js"></script>
+    <script src="./src/functions.js"></script>
+    <script src="./src/main.js"></script>
+  </body>
+</html>

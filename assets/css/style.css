@@ -1,0 +1,40 @@
+body {
+  background: #f1f1f1;
+}
+.card-body {
+  height: 85vh;
+  overflow-y: scroll;
+  padding: 0;
+}
+/* card body scroll bar styling */
+
+.card-body::-webkit-scrollbar {
+  width: 5px;
+}
+.card-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.card-body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+.card-body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* margin design */
+.margin {
+  max-width: 400px;
+}
+
+/* others */
+.output .heading-wrapper h2 {
+  font-size: 22px;
+}
+.output .description-wrapper p {
+  font-size: 16px;
+}
+
+.accordion-button {
+  background: #cfe2ff;
+}
