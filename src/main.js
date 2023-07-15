@@ -184,6 +184,9 @@ const buttonOutput = document.querySelector(".output .button-wrapper button");
  * functionality for button section
  */
 
+//set init val to button input field
+buttonInput.value = buttonOutput.textContent;
+
 // apply button Input
 applyInput(buttonInput, buttonOutput);
 
